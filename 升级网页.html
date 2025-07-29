@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刘景琦的个人网页</title>
+    <!-- 引入Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- 配置Tailwind自定义颜色 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#87D8EA',
+                        secondary: '#E9D5C1',
+                        textDark: '#333333',
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- 自定义工具类 -->
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <!-- 页面容器 - 限制最大宽度 -->
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- 头部区域 -->
+        <header class="bg-primary/90 text-white text-center py-10 rounded-t-2xl mt-4">
+            <div class="container mx-auto">
+                <!-- 使用示例图片 -->
+                <img src="img.jpg" alt="刘景琦"
+                    class="rounded-full w-40 h-40 mx-auto object-cover border-4 border-white shadow-lg" />
+                <h1 class="text-[clamp(1.8rem,5vw,2.5rem)] font-bold mt-4 mb-2">刘景琦</h1>
+                <p class="text-lg">杭州电子科技大学 | 计算机学院</p>
+            </div>
+        </header>
+
+        <!-- 主要内容区域 -->
+        <main class="py-8">
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 transform transition hover:shadow-xl">
+                <h2
+                    class="text-[clamp(1.5rem,3vw,2rem)] font-bold text-textDark mb-6 border-b-2 border-primary/30 pb-3">
+                    <i class="fa fa-user-circle mr-2"></i>个人信息
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-textDark">
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fa fa-university text-primary mt-1 mr-3 w-5 text-center"></i>
+                            <div>
+                                <h3 class="font-semibold text-lg">就读学校</h3>
+                                <p class="text-gray-600">杭州电子科技大学</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <i class="fa fa-building text-primary mt-1 mr-3 w-5 text-center"></i>
+                            <div>
+                                <h3 class="font-semibold text-lg">就读学院</h3>
+                                <p class="text-gray-600">计算机学院</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fa fa-venus-mars text-primary mt-1 mr-3 w-5 text-center"></i>
+                            <div>
+                                <h3 class="font-semibold text-lg">性别</h3>
+                                <p class="text-gray-600">男</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <i class="fa fa-birthday-cake text-primary mt-1 mr-3 w-5 text-center"></i>
+                            <div>
+                                <h3 class="font-semibold text-lg">年龄</h3>
+                                <p class="text-gray-600">19</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-gray-100">
+                    <h3 class="font-semibold text-lg text-textDark mb-3">
+                        <i class="fa fa-heart text-red-500 mr-2"></i>兴趣爱好
+                    </h3>
+                    <p class="text-gray-600">喜欢wyq</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- 页脚区域 -->
+        <footer class="bg-secondary py-8 rounded-b-2xl mb-4">
+            <div class="container mx-auto text-center text-gray-700">
+                <p class="text-lg font-medium mb-4">我的网站</p>
+                <div class="flex justify-center space-x-6">
+                    <a href="#" class="text-gray-700 hover:text-primary transition-colors duration-300">
+                        <i class="fa fa-link mr-1"></i> 友情链接
+                    </a>
+                    <a href="#" class="text-gray-700 hover:text-primary transition-colors duration-300">
+                        <i class="fa fa-github mr-1"></i> GitHub
+                    </a>
+                    <a href="#" class="text-gray-700 hover:text-primary transition-colors duration-300">
+                        <i class="fa fa-envelope mr-1"></i> 联系我
+                    </a>
+                </div>
+                <p class="mt-6 text-sm text-gray-500">© 2025 刘景琦的个人网页 | 设计与开发</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
